@@ -1,0 +1,22 @@
+<h1> <%="#{@test[:actor]}さんの出演番組"%> </h1>
+
+<%if @tv.present? %>
+  <% @tv.each do |t|%>
+    <div class="article" >
+      <div class="article-overview">
+        <p class="article-title">
+          <%= t[:title] %>
+        </p>
+        <p class="article-content">
+          放送時間：<%= t[:time] %>
+        </p>
+        <p class="article-content">
+          出演者：<br>
+          <%= t[:act] %>
+        </p>
+      </div>
+    </div>  
+  <% end %> 
+<%else%>
+  <%= "#{@test[:actor]}さんの出演番組はありません" %>
+<% end %>

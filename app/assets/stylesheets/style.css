@@ -1,0 +1,44 @@
+.article{
+  height: 250px;
+  width: 100%;
+  background: #EEEEEE;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content:space-between; 
+}
+
+.article-overview{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content:space-between;
+}
+
+.article-overview a{
+  display: block;
+  height: 85%;
+}
+
+.article-title{
+  height: 30%;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: solid 2px #040880;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.article-content{
+  height: 60%;
+  width: 100%;
+  padding: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
