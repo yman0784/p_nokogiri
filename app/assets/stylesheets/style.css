@@ -1,5 +1,5 @@
 .article{
-  height: 250px;
+  height: 100%;
   width: 100%;
   background: #EEEEEE;
   padding: 20px;
@@ -22,15 +22,13 @@
 }
 
 .article-title{
-  height: 30%;
+  height: 60%;
   width: 100%;
   padding: 5px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   border-bottom: solid 2px #040880;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .article-content{
@@ -41,4 +39,10 @@
   display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
+}
+
+.article-content-detail{
+  height: 100%;
+  width: 100%;
+  word-break: break-all;
 }

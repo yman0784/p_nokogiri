@@ -1,0 +1,3 @@
+class Tv < ApplicationRecord
+  
+end

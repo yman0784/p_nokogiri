@@ -1,7 +1,7 @@
 <h1> <%="#{@test[:actor]}さんの出演番組"%> </h1>
 
-<%if @tv.present? %>
-  <% @tv.each do |t|%>
+<%if @tele.present? %>
+  <% @tele.each do |t|%>
     <div class="article" >
       <div class="article-overview">
         <p class="article-title">
@@ -10,6 +10,10 @@
         <p class="article-content">
           放送時間：<%= t[:time] %>
         </p>
+        <p class="article-content">
+          番組概要：<%= t[:overview] %>
+        <p class="article-content-detail">
+          番組詳細：<%= t[:detail] %>
         <p class="article-content">
           出演者：<br>
           <%= t[:act] %>
